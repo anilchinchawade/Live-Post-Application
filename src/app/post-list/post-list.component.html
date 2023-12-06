@@ -1,0 +1,9 @@
+<h1>List of Courses</h1>
+<!--We cannot place our posts statically so we comment folloing three lines and add For Decorator 
+to access the available posts dynamically-->
+<!--
+<app-post [post] = "listOfPosts[0]"></app-post>
+<app-post [post] = "listOfPosts[1]"></app-post>
+<app-post [post] = "listOfPosts[2]"></app-post>
+-->
+<app-post *ngFor="let post of listOfPosts; let i=index" [post]="post" [index]="i"></app-post>

@@ -1,0 +1,12 @@
+/*
+input.ng-invalid, textarea.ng-invalid{
+    border: 1px solid red
+}
+*/
+
+/* ng-touched is added so that effect will be
+applied only hen user starts entering data atleast once*/
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
